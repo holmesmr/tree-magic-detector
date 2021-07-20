@@ -1,0 +1,27 @@
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <!--
+    Note that MIME type definitions here are not additive, and replace earlier
+    definitions of the same MIME type.
+    -->
+    <mime-type type="video/mp4">
+        <comment>MPEG-4 video</comment>
+        <alias type="video/mp4v-es"/>
+        <magic priority="50">
+            <!-- ftypiso4-6 are commonly used profiles on Apple devices -->
+            <match type="string" value="ftypiso4" offset="4"/>
+            <match type="string" value="ftypiso5" offset="4"/>
+            <match type="string" value="ftypiso6" offset="4"/>
+            <match type="string" value="ftypisom" offset="4"/>
+            <match type="string" value="ftypmp41" offset="4"/>
+            <match type="string" value="ftypmp42" offset="4"/>
+            <match type="string" value="ftypMSNV" offset="4"/>
+            <match type="string" value="ftypM4V " offset="4"/>
+            <match type="string" value="ftypf4v " offset="4"/>
+        </magic>
+        <glob pattern="*.mp4"/>
+        <glob pattern="*.m4v"/>
+        <glob pattern="*.f4v"/>
+        <glob pattern="*.lrv"/>
+        <alias type="video/x-m4v"/>
+    </mime-type>
+</mime-info>

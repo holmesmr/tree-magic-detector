@@ -1,0 +1,11 @@
+[package]
+name = "tree_magic_detector"
+version = "0.1.0"
+authors = ["Michael Holmes <michael.holmes@passfort.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+tree_magic_mini = "3.0"
